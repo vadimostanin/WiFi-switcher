@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <finder.remotedevice.vostanin.com.remotedevicefinder.NumberPickerPreference
+            android:key="key_number"
+            android:defaultValue="55" />
+
+<!--android:fragment="finder.remotedevice.vostanin.com.remotedevicefinder.DeviceAddActivity$Prefs1Fragment"-->
+</PreferenceScreen>

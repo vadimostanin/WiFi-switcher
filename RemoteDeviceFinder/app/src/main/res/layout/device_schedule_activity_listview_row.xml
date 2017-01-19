@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/back"
+        android:tag="back"
+        style="@style/MyListBackContent"
+        >
+
+        <!--<Button-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/activity_device_schedule_btnRemove"-->
+            <!--style="@style/MyListButtonAction"-->
+            <!--android:text="Remove"/>-->
+        <ImageView
+            style="@style/MyListImage"
+            android:id="@+id/activity_device_schedule_listview_item_emptyimageview"/>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:orientation="vertical"
+        android:id="@+id/activity_device_schedule_front"
+        android:tag="front"
+        style="@style/MyListFrontContent">
+
+        <ImageView
+            style="@style/MyListImage"
+            android:id="@+id/activity_device_schedule_listview_item_action_icon"/>
+
+        <!--<TextView-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_toRightOf="@id/activity_device_schedule_listview_item_action_icon"-->
+            <!--style="@style/MyListTitle"-->
+            <!--android:id="@+id/activity_device_schedule_listview_item_period"/>-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/activity_device_schedule_listview_item_action_icon"
+            style="@style/MyListTitle"
+            android:id="@+id/activity_device_schedule_listview_item_date"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/activity_device_schedule_listview_item_action_icon"
+            android:layout_below="@id/activity_device_schedule_listview_item_date"
+            style="@style/MyListTitle"
+            android:id="@+id/activity_device_schedule_listview_item_time"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

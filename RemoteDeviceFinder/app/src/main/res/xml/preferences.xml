@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:speedreader="http://schemas.android.com/apk/res-auto">
+
+    <finder.remotedevice.vostanin.com.remotedevicefinder.VNTNumberPickerPreference
+        android:defaultValue="@integer/font_size_default_value"
+        android:key="preference_font_size"
+        android:title="@string/font_size"
+        speedreader:vnt_maxValue="@integer/font_size_max_value"
+        speedreader:vnt_minValue="@integer/font_size_min_value"
+        speedreader:vnt_setWrapSelectorWheel="true"/>
+
+</PreferenceScreen>

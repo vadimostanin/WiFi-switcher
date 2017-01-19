@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="finder.remotedevice.vostanin.com.remotedevicefinder.DeviceScheduleAddActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onClickRadioPeriodOnes">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Actions"
+                android:id="@+id/activity_device_schedule_add_labelAction"
+                android:layout_column="0"
+                android:textStyle="bold"
+                android:autoText="false"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <RadioGroup
+                android:id="@+id/activity_device_schedule_add_action_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ON"
+                        android:id="@+id/activity_device_schedule_add_action_group_on"
+                        android:layout_column="1"
+                        android:onClick="onClickRadioActionOn"
+                        android:checked="true"/>
+
+                    <Space
+                        android:layout_width="20px"
+                        android:layout_height="20px"
+                        android:layout_column="14" />
+
+                    <Space
+                        android:layout_width="20px"
+                        android:layout_height="20px"
+                        android:layout_column="14" />
+                    <Space
+                        android:layout_width="20px"
+                        android:layout_height="20px"
+                        android:layout_column="14" />
+                    <Space
+                        android:layout_width="20px"
+                        android:layout_height="20px"
+                        android:layout_column="14" />
+                    <Space
+                        android:layout_width="20px"
+                        android:layout_height="20px"
+                        android:layout_column="14" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OFF"
+                        android:id="@+id/activity_device_schedule_add_action_group_off"
+                        android:layout_column="20"
+                        android:onClick="onClickRadioActionOff"/>
+            </RadioGroup>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add"
+                android:id="@+id/activity_device_schedule_add_button_add"
+                android:layout_column="3" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioGroup
+                android:id="@+id/activity_device_schedule_add_period_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_column="0">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ones"
+                    android:id="@+id/activity_device_schedule_add_period_group_ones"
+                    android:layout_column="1"
+                    android:onClick="onClickRadioPeriodOnes"
+                    android:checked="true"/>
+
+                <Space
+                    android:layout_width="20px"
+                    android:layout_height="20px"
+                    android:layout_column="14" />
+
+                <Space
+                    android:layout_width="20px"
+                    android:layout_height="20px"
+                    android:layout_column="14" />
+
+                <Space
+                    android:layout_width="20px"
+                    android:layout_height="20px"
+                    android:layout_column="14" />
+
+                <Space
+                    android:layout_width="20px"
+                    android:layout_height="20px"
+                    android:layout_column="14" />
+
+                <Space
+                    android:layout_width="20px"
+                    android:layout_height="20px"
+                    android:layout_column="14" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Everyday"
+                    android:id="@+id/activity_device_schedule_add_period_group_everyday"
+                    android:layout_column="20"
+                    android:onClick="onClickRadioPeriodEveryday"
+                    android:nestedScrollingEnabled="false" />
+            </RadioGroup>
+        </TableRow>
+        <TableRow>
+            <LinearLayout
+                android:id="@+id/activity_device_schedule_add_fragment_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                </LinearLayout>
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>
